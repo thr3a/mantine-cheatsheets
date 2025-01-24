@@ -10,6 +10,18 @@ export function SampleVanillaExtract() {
   return <Box className={veClasses.box}>sample</Box>;
 }
 
+export function SampleStyleProps() {
+  return (
+    // margin-left: auto; margin-right: auto; (centers the box horizontally)
+    // max-width: 400px
+    // color: theme.colors.blue[6]
+    // background-color: #fff
+    <Box mx='auto' maw={400} c='blue.6' bg='#fff'>
+      Your component
+    </Box>
+  );
+}
+
 export function SampleStyle() {
   const theme = useMantineTheme();
 
@@ -39,6 +51,24 @@ export function SampleStyle() {
         }}
       >
         Button 1
+      </Button>
+      <Box
+        style={(theme) => ({
+          color: theme.colors.red[5],
+          fontSize: theme.fontSizes.xs
+        })}
+      />
+
+      <Button
+        radius='md'
+        styles={{
+          root: {
+            padding: 2,
+            border: 0
+          }
+        }}
+      >
+        button
       </Button>
     </div>
   );
