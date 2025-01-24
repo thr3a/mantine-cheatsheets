@@ -1,4 +1,4 @@
-# 色一覧
+# Mantineの色一覧
 
 ```
 dark.0: #C9C9C9
@@ -143,7 +143,7 @@ orange.8: #e8590c
 orange.9: #d9480f
 ```
 
-# Style props
+# Mantineで使用可能なStyle props
 
 All Mantine components that have root element support the following style props:
 
