@@ -1,12 +1,12 @@
 import { rem } from '@mantine/core';
 import { style } from '@vanilla-extract/css';
-import { vars } from '../theme';
+import { vars } from './theme';
 
-export const title = style({
+export const box = style({
   color: vars.colors.black,
-  fontSize: rem(100),
-  fontWeight: 900,
-  letterSpacing: rem(-2),
+  backgroundColor: vars.colors.red[5],
+  fontSize: vars.fontSizes.xl,
+  paddingRight: vars.spacing.md,
 
   selectors: {
     [vars.darkSelector]: {

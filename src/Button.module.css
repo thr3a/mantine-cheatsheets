@@ -1,0 +1,4 @@
+.box {
+  color: red;
+  font-size: var(--mantine-font-size-xl);
+}
